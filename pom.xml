@@ -5,7 +5,7 @@
 
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>fireworks-exporter</artifactId>
-    <version>2.5.9</version>
+    <version>3.0.5</version>
     <packaging>jar</packaging>
 
     <name>Fireworks Exporter</name>
