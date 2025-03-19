@@ -5,10 +5,10 @@ current_version=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdou
 echo "Current version: $current_version"
 
 # Extract major, minor, and patch versions
-major=${current_version%%.*}            # Extracts major version (first number)
-rest=${current_version#*.}               # Removes major version from the string
-minor=${rest%%.*}                        # Extracts minor version (second number)
-patch=${rest#*.}                         # Gets the remaining part (patch)
+major=${current_version%%.*}            
+rest=${current_version#*.}               
+minor=${rest%%.*}                        
+patch=${rest#*.}                         
 
 # Increment the minor version
 new_minor=$((minor + 1))
